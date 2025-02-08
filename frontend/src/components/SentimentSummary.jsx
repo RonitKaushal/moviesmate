@@ -7,7 +7,7 @@ const SentimentSummary = ({ reviews, sentimentSummary }) => {
   
   if (!reviews || reviews.length === 0) {
     return (
-      <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
+      <div className="bg-primary-foreground border rounded-lg p-6">
         <div className="flex items-center justify-center space-x-2 text-gray-400">
           <MessageSquare className="w-5 h-5" />
           <span>No reviews available yet</span>

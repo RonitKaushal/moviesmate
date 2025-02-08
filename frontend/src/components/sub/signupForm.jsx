@@ -101,7 +101,7 @@ export function SignupForm({ className, ...props }) {
           />
         </div>
         <Button type="submit" className="w-full">
-          Login
+          Sign-up
         </Button>
       </div>
       <div className="text-center text-sm">

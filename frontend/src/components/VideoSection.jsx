@@ -15,11 +15,11 @@ export const VideoSection = ({ videos }) => {
   };
 
   return (
-    <div className="bg-gray-900 rounded-lg p-8 shadow-lg">
-      <h2 className="text-3xl font-bold mb-6 text-gold-500">Videos</h2>
+    <div className="border-t p-8">
+      <h2 className="Non-Natural-Grotesk-Bold text-3xl font-bold mb-6 text-primary">Videos</h2>
 
       {selectedVideo && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+        <div className="fixed flex items-center justify-center z-50 p-4">
           <div className="bg-gray-900 p-4 rounded-lg w-full max-w-4xl">
             <div className="relative pt-[56.25%]">
               <iframe

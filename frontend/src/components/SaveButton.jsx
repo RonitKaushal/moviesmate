@@ -133,22 +133,22 @@ export const SaveButton = ({ media }) => {
     <>
 <button
   onClick={() => setIsModalOpen(true)}
-  style={{
-    backgroundColor: "lightseagreen",
-  }}
-  className="flex items-center gap-2 px-4 py-2 
+  className="flex items-center gap-2 px-7 py-3 
     text-black font-bold 
-    rounded-lg 
+    rounded-lg
     transition-all duration-300 
     shadow-md hover:shadow-lg 
-    hover:scale-105 
     focus:outline-none 
     focus:ring-2 focus:ring-opacity-75 
     active:scale-95 
-    transform 
-    group"
+    transform
+    group
+    text-sm
+    bg-background
+    text-primary
+    "
 >
-        <Bookmark className="group-hover:scale-110 transition-transform" />
+        <Bookmark className="" />
         Save to Playlist
       </button>
       <PlaylistModal

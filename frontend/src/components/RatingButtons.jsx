@@ -67,10 +67,10 @@ export default function RatingButtons({ media }) {
   }
 
   return (
-    <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 p-4 shadow-xl">
+    <div className="relative overflow-hidden border-b bg-background p-4">
       <div className="absolute inset-0 bg-grid-white/[0.02]" />
       <div className="relative flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-between sm:space-y-0">
-        <h3 className="text-lg font-semibold text-gold-500 sm:text-xl">Rate this {media.media_type || "movie"}</h3>
+        <h3 className="Non-Natural-Grotesk-Bold text-lg font-semibold text-gold-500 sm:text-xl">Rate this {media.media_type || "movie"}</h3>
 
         <div className="flex flex-wrap gap-2 sm:flex-nowrap">
           <RatingButton
@@ -81,6 +81,7 @@ export default function RatingButtons({ media }) {
             selected={selectedRating === "good"}
             disabled={submitting}
             color="green"
+            
           />
           <RatingButton
             icon={Award}
@@ -102,7 +103,7 @@ export default function RatingButtons({ media }) {
           />
         </div>
 
-        <div className="flex items-center space-x-2 rounded-lg bg-gray-800/50 px-3 py-1 text-sm">
+        <div className="flex items-center space-x-2 rounded-lg bg-primary-foreground px-3 py-1 text-sm">
           <span className="font-medium text-gray-400">Total:</span>
           <span className="font-bold text-gold-500">{counts.total}</span>
         </div>
@@ -120,7 +121,7 @@ function RatingButton({ icon: Icon, label, count, onClick, selected, disabled, c
         "group flex items-center justify-between gap-2 rounded-lg border px-3 py-2 transition-all duration-300",
         selected
           ? `border-${color}-500 bg-${color}-500/20`
-          : `border-gray-700 bg-gray-800/50 hover:border-${color}-500/50 hover:bg-${color}-500/10`,
+          : `border-border bg-primary-foreground`,
       )}
     >
       <div className="flex items-center gap-2">
