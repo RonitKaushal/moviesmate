@@ -129,7 +129,7 @@ const Face = () => {
                 </div>
               </div>
             ) : (
-              <Button onClick={() => setShowWebcam(true)} className="mx-auto block">
+              <Button onClick={() => setShowWebcam(true)} className="mx-auto w-full">
                 <Camera className="w-4 h-4 mr-2" />
                 Open Camera
               </Button>
